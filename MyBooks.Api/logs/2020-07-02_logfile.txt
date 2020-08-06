@@ -1,0 +1,333 @@
+2020-07-02 18:38:55.5571 ERROR Something went wrong: Newtonsoft.Json.JsonSerializationException: Self referencing loop detected with type 'MyBooks.Data.Entities.BooksEntity'. Path 'catalogs[0].books'.
+   at Newtonsoft.Json.Serialization.JsonSerializerInternalWriter.CheckForCircularReference(JsonWriter writer, Object value, JsonProperty property, JsonContract contract, JsonContainerContract containerContract, JsonProperty containerProperty)
+   at Newtonsoft.Json.Serialization.JsonSerializerInternalWriter.SerializeList(JsonWriter writer, IEnumerable values, JsonArrayContract contract, JsonProperty member, JsonContainerContract collectionContract, JsonProperty containerProperty)
+   at Newtonsoft.Json.Serialization.JsonSerializerInternalWriter.SerializeObject(JsonWriter writer, Object value, JsonObjectContract contract, JsonProperty member, JsonContainerContract collectionContract, JsonProperty containerProperty)
+   at Newtonsoft.Json.Serialization.JsonSerializerInternalWriter.SerializeList(JsonWriter writer, IEnumerable values, JsonArrayContract contract, JsonProperty member, JsonContainerContract collectionContract, JsonProperty containerProperty)
+   at Newtonsoft.Json.Serialization.JsonSerializerInternalWriter.SerializeObject(JsonWriter writer, Object value, JsonObjectContract contract, JsonProperty member, JsonContainerContract collectionContract, JsonProperty containerProperty)
+   at Newtonsoft.Json.Serialization.JsonSerializerInternalWriter.Serialize(JsonWriter jsonWriter, Object value, Type objectType)
+   at Newtonsoft.Json.JsonSerializer.SerializeInternal(JsonWriter jsonWriter, Object value, Type objectType)
+   at Microsoft.AspNetCore.Mvc.Formatters.JsonOutputFormatter.WriteObject(TextWriter writer, Object value)
+   at Microsoft.AspNetCore.Mvc.Formatters.JsonOutputFormatter.WriteResponseBodyAsync(OutputFormatterWriteContext context, Encoding selectedEncoding)
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.InvokeResultAsync(IActionResult result)
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.InvokeNextResultFilterAsync[TFilter,TFilterAsync]()
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.Rethrow(ResultExecutedContext context)
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.ResultNext[TFilter,TFilterAsync](State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.InvokeResultFilters()
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.InvokeNextResourceFilter()
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.Rethrow(ResourceExecutedContext context)
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.InvokeFilterPipelineAsync()
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.InvokeAsync()
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.Invoke(HttpContext httpContext)
+   at Microsoft.AspNetCore.Routing.EndpointRoutingMiddleware.Invoke(HttpContext httpContext)
+   at MyBooks.Api.Filters.ExceptionMiddleware.InvokeAsync(HttpContext httpContext) in C:\Users\Ika\source\repos\MyBooks.Api\MyBooks.Api\Filters\ExceptionMiddleware.cs:line 27
+2020-07-02 18:41:44.1913 ERROR Something went wrong: Newtonsoft.Json.JsonSerializationException: Self referencing loop detected with type 'MyBooks.Data.Entities.BooksEntity'. Path 'catalogs[0].books'.
+   at Newtonsoft.Json.Serialization.JsonSerializerInternalWriter.CheckForCircularReference(JsonWriter writer, Object value, JsonProperty property, JsonContract contract, JsonContainerContract containerContract, JsonProperty containerProperty)
+   at Newtonsoft.Json.Serialization.JsonSerializerInternalWriter.SerializeList(JsonWriter writer, IEnumerable values, JsonArrayContract contract, JsonProperty member, JsonContainerContract collectionContract, JsonProperty containerProperty)
+   at Newtonsoft.Json.Serialization.JsonSerializerInternalWriter.SerializeObject(JsonWriter writer, Object value, JsonObjectContract contract, JsonProperty member, JsonContainerContract collectionContract, JsonProperty containerProperty)
+   at Newtonsoft.Json.Serialization.JsonSerializerInternalWriter.SerializeList(JsonWriter writer, IEnumerable values, JsonArrayContract contract, JsonProperty member, JsonContainerContract collectionContract, JsonProperty containerProperty)
+   at Newtonsoft.Json.Serialization.JsonSerializerInternalWriter.SerializeObject(JsonWriter writer, Object value, JsonObjectContract contract, JsonProperty member, JsonContainerContract collectionContract, JsonProperty containerProperty)
+   at Newtonsoft.Json.Serialization.JsonSerializerInternalWriter.Serialize(JsonWriter jsonWriter, Object value, Type objectType)
+   at Newtonsoft.Json.JsonSerializer.SerializeInternal(JsonWriter jsonWriter, Object value, Type objectType)
+   at Microsoft.AspNetCore.Mvc.Formatters.JsonOutputFormatter.WriteObject(TextWriter writer, Object value)
+   at Microsoft.AspNetCore.Mvc.Formatters.JsonOutputFormatter.WriteResponseBodyAsync(OutputFormatterWriteContext context, Encoding selectedEncoding)
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.InvokeResultAsync(IActionResult result)
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.InvokeNextResultFilterAsync[TFilter,TFilterAsync]()
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.Rethrow(ResultExecutedContext context)
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.ResultNext[TFilter,TFilterAsync](State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.InvokeResultFilters()
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.InvokeNextResourceFilter()
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.Rethrow(ResourceExecutedContext context)
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.InvokeFilterPipelineAsync()
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.InvokeAsync()
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.Invoke(HttpContext httpContext)
+   at Microsoft.AspNetCore.Routing.EndpointRoutingMiddleware.Invoke(HttpContext httpContext)
+   at MyBooks.Api.Filters.ExceptionMiddleware.InvokeAsync(HttpContext httpContext) in C:\Users\Ika\source\repos\MyBooks.Api\MyBooks.Api\Filters\ExceptionMiddleware.cs:line 27
+2020-07-02 18:44:42.5005 ERROR Something went wrong: AutoMapper.AutoMapperMappingException: Error mapping types.
+
+Mapping types:
+Books -> BooksEntity
+MyBooks.Data.Models.Books -> MyBooks.Data.Entities.BooksEntity
+
+Type Map configuration:
+Books -> BooksEntity
+MyBooks.Data.Models.Books -> MyBooks.Data.Entities.BooksEntity
+
+Destination Member:
+Supplier
+ ---> AutoMapper.AutoMapperMappingException: Missing type map configuration or unsupported mapping.
+
+Mapping types:
+Suppliers -> Suppliers
+MyBooks.Data.Models.Suppliers -> MyBooks.Data.Entities.Suppliers
+   at lambda_method(Closure , Suppliers , Suppliers , ResolutionContext )
+   at AutoMapper.Mapper.Map[TSource,TDestination](TSource source, TDestination destination, ResolutionContext context, IMemberMap memberMap) in C:\projects\automapper\src\AutoMapper\Mapper.cs:line 194
+   at lambda_method(Closure , Books , BooksEntity , ResolutionContext )
+   --- End of inner exception stack trace ---
+   at lambda_method(Closure , Books , BooksEntity , ResolutionContext )
+   at lambda_method(Closure , Object , Object , ResolutionContext )
+   at AutoMapper.Mapper.Map[TDestination](Object source) in C:\projects\automapper\src\AutoMapper\Mapper.cs:line 35
+   at MyBooks.Core.Services.BookService.GetBookByIdAsync(Int32 bookid, Boolean includeCatalogs) in C:\Users\Ika\source\repos\MyBooks.Api\MyBooks.Core\Services\BookService.cs:line 49
+   at MyBooks.Api.Controllers.BooksController.GetBookByIdAsync(Int32 id, Boolean includeCatalogs) in C:\Users\Ika\source\repos\MyBooks.Api\MyBooks.Api\Controllers\BooksController.cs:line 45
+   at Microsoft.AspNetCore.Mvc.Internal.ActionMethodExecutor.TaskOfIActionResultExecutor.Execute(IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at System.Threading.Tasks.ValueTask`1.get_Result()
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.InvokeActionMethodAsync()
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.InvokeNextActionFilterAsync()
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.Rethrow(ActionExecutedContext context)
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.InvokeInnerFilterAsync()
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.InvokeNextResourceFilter()
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.Rethrow(ResourceExecutedContext context)
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.InvokeFilterPipelineAsync()
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.InvokeAsync()
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.Invoke(HttpContext httpContext)
+   at Microsoft.AspNetCore.Routing.EndpointRoutingMiddleware.Invoke(HttpContext httpContext)
+   at MyBooks.Api.Filters.ExceptionMiddleware.InvokeAsync(HttpContext httpContext) in C:\Users\Ika\source\repos\MyBooks.Api\MyBooks.Api\Filters\ExceptionMiddleware.cs:line 27
+2020-07-02 18:47:28.0072 ERROR Something went wrong: AutoMapper.AutoMapperMappingException: Error mapping types.
+
+Mapping types:
+Books -> BooksEntity
+MyBooks.Data.Models.Books -> MyBooks.Data.Entities.BooksEntity
+
+Type Map configuration:
+Books -> BooksEntity
+MyBooks.Data.Models.Books -> MyBooks.Data.Entities.BooksEntity
+
+Destination Member:
+Supplier
+ ---> AutoMapper.AutoMapperMappingException: Missing type map configuration or unsupported mapping.
+
+Mapping types:
+Suppliers -> Suppliers
+MyBooks.Data.Models.Suppliers -> MyBooks.Data.Entities.Suppliers
+   at lambda_method(Closure , Suppliers , Suppliers , ResolutionContext )
+   at AutoMapper.Mapper.Map[TSource,TDestination](TSource source, TDestination destination, ResolutionContext context, IMemberMap memberMap) in C:\projects\automapper\src\AutoMapper\Mapper.cs:line 194
+   at lambda_method(Closure , Books , BooksEntity , ResolutionContext )
+   --- End of inner exception stack trace ---
+   at lambda_method(Closure , Books , BooksEntity , ResolutionContext )
+   at lambda_method(Closure , Object , Object , ResolutionContext )
+   at AutoMapper.Mapper.Map[TDestination](Object source) in C:\projects\automapper\src\AutoMapper\Mapper.cs:line 35
+   at MyBooks.Core.Services.BookService.GetBookByIdAsync(Int32 bookid, Boolean includeCatalogs) in C:\Users\Ika\source\repos\MyBooks.Api\MyBooks.Core\Services\BookService.cs:line 49
+   at MyBooks.Api.Controllers.BooksController.GetBookByIdAsync(Int32 id, Boolean includeCatalogs) in C:\Users\Ika\source\repos\MyBooks.Api\MyBooks.Api\Controllers\BooksController.cs:line 45
+   at Microsoft.AspNetCore.Mvc.Internal.ActionMethodExecutor.TaskOfIActionResultExecutor.Execute(IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at System.Threading.Tasks.ValueTask`1.get_Result()
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.InvokeActionMethodAsync()
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.InvokeNextActionFilterAsync()
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.Rethrow(ActionExecutedContext context)
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.InvokeInnerFilterAsync()
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.InvokeNextResourceFilter()
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.Rethrow(ResourceExecutedContext context)
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.InvokeFilterPipelineAsync()
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.InvokeAsync()
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.Invoke(HttpContext httpContext)
+   at Microsoft.AspNetCore.Routing.EndpointRoutingMiddleware.Invoke(HttpContext httpContext)
+   at MyBooks.Api.Filters.ExceptionMiddleware.InvokeAsync(HttpContext httpContext) in C:\Users\Ika\source\repos\MyBooks.Api\MyBooks.Api\Filters\ExceptionMiddleware.cs:line 27
+2020-07-02 18:48:04.2275 ERROR Something went wrong: AutoMapper.AutoMapperMappingException: Error mapping types.
+
+Mapping types:
+Books -> BooksEntity
+MyBooks.Data.Models.Books -> MyBooks.Data.Entities.BooksEntity
+
+Type Map configuration:
+Books -> BooksEntity
+MyBooks.Data.Models.Books -> MyBooks.Data.Entities.BooksEntity
+
+Destination Member:
+Supplier
+ ---> AutoMapper.AutoMapperMappingException: Missing type map configuration or unsupported mapping.
+
+Mapping types:
+Suppliers -> Suppliers
+MyBooks.Data.Models.Suppliers -> MyBooks.Data.Entities.Suppliers
+   at lambda_method(Closure , Suppliers , Suppliers , ResolutionContext )
+   at AutoMapper.Mapper.Map[TSource,TDestination](TSource source, TDestination destination, ResolutionContext context, IMemberMap memberMap) in C:\projects\automapper\src\AutoMapper\Mapper.cs:line 194
+   at lambda_method(Closure , Books , BooksEntity , ResolutionContext )
+   --- End of inner exception stack trace ---
+   at lambda_method(Closure , Books , BooksEntity , ResolutionContext )
+   at lambda_method(Closure , Object , Object , ResolutionContext )
+   at AutoMapper.Mapper.Map[TDestination](Object source) in C:\projects\automapper\src\AutoMapper\Mapper.cs:line 35
+   at MyBooks.Core.Services.BookService.GetBookByIdAsync(Int32 bookid, Boolean includeCatalogs) in C:\Users\Ika\source\repos\MyBooks.Api\MyBooks.Core\Services\BookService.cs:line 49
+   at MyBooks.Api.Controllers.BooksController.GetBookByIdAsync(Int32 id, Boolean includeCatalogs) in C:\Users\Ika\source\repos\MyBooks.Api\MyBooks.Api\Controllers\BooksController.cs:line 45
+   at Microsoft.AspNetCore.Mvc.Internal.ActionMethodExecutor.TaskOfIActionResultExecutor.Execute(IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at System.Threading.Tasks.ValueTask`1.get_Result()
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.InvokeActionMethodAsync()
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.InvokeNextActionFilterAsync()
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.Rethrow(ActionExecutedContext context)
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.InvokeInnerFilterAsync()
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.InvokeNextResourceFilter()
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.Rethrow(ResourceExecutedContext context)
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.InvokeFilterPipelineAsync()
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.InvokeAsync()
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.Invoke(HttpContext httpContext)
+   at Microsoft.AspNetCore.Routing.EndpointRoutingMiddleware.Invoke(HttpContext httpContext)
+   at MyBooks.Api.Filters.ExceptionMiddleware.InvokeAsync(HttpContext httpContext) in C:\Users\Ika\source\repos\MyBooks.Api\MyBooks.Api\Filters\ExceptionMiddleware.cs:line 27
+2020-07-02 18:53:31.5059 ERROR Something went wrong: AutoMapper.AutoMapperMappingException: Error mapping types.
+
+Mapping types:
+Books -> BooksEntity
+MyBooks.Data.Models.Books -> MyBooks.Data.Entities.BooksEntity
+
+Type Map configuration:
+Books -> BooksEntity
+MyBooks.Data.Models.Books -> MyBooks.Data.Entities.BooksEntity
+
+Destination Member:
+Supplier
+ ---> AutoMapper.AutoMapperMappingException: Missing type map configuration or unsupported mapping.
+
+Mapping types:
+Suppliers -> Suppliers
+MyBooks.Data.Models.Suppliers -> MyBooks.Data.Entities.Suppliers
+   at lambda_method(Closure , Suppliers , Suppliers , ResolutionContext )
+   at AutoMapper.Mapper.Map[TSource,TDestination](TSource source, TDestination destination, ResolutionContext context, IMemberMap memberMap) in C:\projects\automapper\src\AutoMapper\Mapper.cs:line 194
+   at lambda_method(Closure , Books , BooksEntity , ResolutionContext )
+   --- End of inner exception stack trace ---
+   at lambda_method(Closure , Books , BooksEntity , ResolutionContext )
+   at lambda_method(Closure , Object , Object , ResolutionContext )
+   at AutoMapper.Mapper.Map[TDestination](Object source) in C:\projects\automapper\src\AutoMapper\Mapper.cs:line 35
+   at MyBooks.Core.Services.BookService.GetBookByIdAsync(Int32 bookid, Boolean includeCatalogs) in C:\Users\Ika\source\repos\MyBooks.Api\MyBooks.Core\Services\BookService.cs:line 49
+   at MyBooks.Api.Controllers.BooksController.GetBookByIdAsync(Int32 id, Boolean includeCatalogs) in C:\Users\Ika\source\repos\MyBooks.Api\MyBooks.Api\Controllers\BooksController.cs:line 45
+   at Microsoft.AspNetCore.Mvc.Internal.ActionMethodExecutor.TaskOfIActionResultExecutor.Execute(IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at System.Threading.Tasks.ValueTask`1.get_Result()
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.InvokeActionMethodAsync()
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.InvokeNextActionFilterAsync()
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.Rethrow(ActionExecutedContext context)
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.InvokeInnerFilterAsync()
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.InvokeNextResourceFilter()
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.Rethrow(ResourceExecutedContext context)
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.InvokeFilterPipelineAsync()
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.InvokeAsync()
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.Invoke(HttpContext httpContext)
+   at Microsoft.AspNetCore.Routing.EndpointRoutingMiddleware.Invoke(HttpContext httpContext)
+   at MyBooks.Api.Filters.ExceptionMiddleware.InvokeAsync(HttpContext httpContext) in C:\Users\Ika\source\repos\MyBooks.Api\MyBooks.Api\Filters\ExceptionMiddleware.cs:line 27
+2020-07-02 18:56:25.7449 ERROR Something went wrong: AutoMapper.AutoMapperMappingException: Error mapping types.
+
+Mapping types:
+Books -> BooksEntity
+MyBooks.Data.Models.Books -> MyBooks.Data.Entities.BooksEntity
+
+Type Map configuration:
+Books -> BooksEntity
+MyBooks.Data.Models.Books -> MyBooks.Data.Entities.BooksEntity
+
+Destination Member:
+Supplier
+ ---> AutoMapper.AutoMapperMappingException: Missing type map configuration or unsupported mapping.
+
+Mapping types:
+Suppliers -> Suppliers
+MyBooks.Data.Models.Suppliers -> MyBooks.Data.Entities.Suppliers
+   at lambda_method(Closure , Suppliers , Suppliers , ResolutionContext )
+   at AutoMapper.Mapper.Map[TSource,TDestination](TSource source, TDestination destination, ResolutionContext context, IMemberMap memberMap) in C:\projects\automapper\src\AutoMapper\Mapper.cs:line 194
+   at lambda_method(Closure , Books , BooksEntity , ResolutionContext )
+   --- End of inner exception stack trace ---
+   at lambda_method(Closure , Books , BooksEntity , ResolutionContext )
+   at lambda_method(Closure , Object , Object , ResolutionContext )
+   at AutoMapper.Mapper.Map[TDestination](Object source) in C:\projects\automapper\src\AutoMapper\Mapper.cs:line 35
+   at MyBooks.Core.Services.BookService.GetBookByIdAsync(Int32 bookid, Boolean includeCatalogs) in C:\Users\Ika\source\repos\MyBooks.Api\MyBooks.Core\Services\BookService.cs:line 49
+   at MyBooks.Api.Controllers.BooksController.GetBookByIdAsync(Int32 id, Boolean includeCatalogs) in C:\Users\Ika\source\repos\MyBooks.Api\MyBooks.Api\Controllers\BooksController.cs:line 45
+   at Microsoft.AspNetCore.Mvc.Internal.ActionMethodExecutor.TaskOfIActionResultExecutor.Execute(IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at System.Threading.Tasks.ValueTask`1.get_Result()
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.InvokeActionMethodAsync()
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.InvokeNextActionFilterAsync()
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.Rethrow(ActionExecutedContext context)
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.InvokeInnerFilterAsync()
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.InvokeNextResourceFilter()
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.Rethrow(ResourceExecutedContext context)
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.InvokeFilterPipelineAsync()
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.InvokeAsync()
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.Invoke(HttpContext httpContext)
+   at Microsoft.AspNetCore.Routing.EndpointRoutingMiddleware.Invoke(HttpContext httpContext)
+   at MyBooks.Api.Filters.ExceptionMiddleware.InvokeAsync(HttpContext httpContext) in C:\Users\Ika\source\repos\MyBooks.Api\MyBooks.Api\Filters\ExceptionMiddleware.cs:line 27
+2020-07-02 18:57:30.0238 ERROR Something went wrong: AutoMapper.AutoMapperMappingException: Error mapping types.
+
+Mapping types:
+Books -> BooksEntity
+MyBooks.Data.Models.Books -> MyBooks.Data.Entities.BooksEntity
+
+Type Map configuration:
+Books -> BooksEntity
+MyBooks.Data.Models.Books -> MyBooks.Data.Entities.BooksEntity
+
+Destination Member:
+Supplier
+ ---> AutoMapper.AutoMapperMappingException: Missing type map configuration or unsupported mapping.
+
+Mapping types:
+Suppliers -> Suppliers
+MyBooks.Data.Models.Suppliers -> MyBooks.Data.Entities.Suppliers
+   at lambda_method(Closure , Suppliers , Suppliers , ResolutionContext )
+   at AutoMapper.Mapper.Map[TSource,TDestination](TSource source, TDestination destination, ResolutionContext context, IMemberMap memberMap) in C:\projects\automapper\src\AutoMapper\Mapper.cs:line 194
+   at lambda_method(Closure , Books , BooksEntity , ResolutionContext )
+   --- End of inner exception stack trace ---
+   at lambda_method(Closure , Books , BooksEntity , ResolutionContext )
+   at lambda_method(Closure , Object , Object , ResolutionContext )
+   at AutoMapper.Mapper.Map[TDestination](Object source) in C:\projects\automapper\src\AutoMapper\Mapper.cs:line 35
+   at MyBooks.Core.Services.BookService.GetBookByIdAsync(Int32 bookid, Boolean includeCatalogs) in C:\Users\Ika\source\repos\MyBooks.Api\MyBooks.Core\Services\BookService.cs:line 49
+   at MyBooks.Api.Controllers.BooksController.GetBookByIdAsync(Int32 id, Boolean includeCatalogs) in C:\Users\Ika\source\repos\MyBooks.Api\MyBooks.Api\Controllers\BooksController.cs:line 45
+   at Microsoft.AspNetCore.Mvc.Internal.ActionMethodExecutor.TaskOfIActionResultExecutor.Execute(IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at System.Threading.Tasks.ValueTask`1.get_Result()
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.InvokeActionMethodAsync()
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.InvokeNextActionFilterAsync()
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.Rethrow(ActionExecutedContext context)
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.InvokeInnerFilterAsync()
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.InvokeNextResourceFilter()
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.Rethrow(ResourceExecutedContext context)
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.InvokeFilterPipelineAsync()
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.InvokeAsync()
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.Invoke(HttpContext httpContext)
+   at Microsoft.AspNetCore.Routing.EndpointRoutingMiddleware.Invoke(HttpContext httpContext)
+   at MyBooks.Api.Filters.ExceptionMiddleware.InvokeAsync(HttpContext httpContext) in C:\Users\Ika\source\repos\MyBooks.Api\MyBooks.Api\Filters\ExceptionMiddleware.cs:line 27
+2020-07-02 19:00:49.0742 ERROR Something went wrong: AutoMapper.AutoMapperMappingException: Error mapping types.
+
+Mapping types:
+Books -> BooksEntity
+MyBooks.Data.Models.Books -> MyBooks.Data.Entities.BooksEntity
+
+Type Map configuration:
+Books -> BooksEntity
+MyBooks.Data.Models.Books -> MyBooks.Data.Entities.BooksEntity
+
+Destination Member:
+Supplier
+ ---> AutoMapper.AutoMapperMappingException: Missing type map configuration or unsupported mapping.
+
+Mapping types:
+Suppliers -> Suppliers
+MyBooks.Data.Models.Suppliers -> MyBooks.Data.Entities.Suppliers
+   at lambda_method(Closure , Suppliers , Suppliers , ResolutionContext )
+   at AutoMapper.Mapper.Map[TSource,TDestination](TSource source, TDestination destination, ResolutionContext context, IMemberMap memberMap) in C:\projects\automapper\src\AutoMapper\Mapper.cs:line 194
+   at lambda_method(Closure , Books , BooksEntity , ResolutionContext )
+   --- End of inner exception stack trace ---
+   at lambda_method(Closure , Books , BooksEntity , ResolutionContext )
+   at lambda_method(Closure , Object , Object , ResolutionContext )
+   at AutoMapper.Mapper.Map[TDestination](Object source) in C:\projects\automapper\src\AutoMapper\Mapper.cs:line 35
+   at MyBooks.Core.Services.BookService.GetBookByIdAsync(Int32 bookid, Boolean includeCatalogs) in C:\Users\Ika\source\repos\MyBooks.Api\MyBooks.Core\Services\BookService.cs:line 49
+   at MyBooks.Api.Controllers.BooksController.GetBookByIdAsync(Int32 id, Boolean includeCatalogs) in C:\Users\Ika\source\repos\MyBooks.Api\MyBooks.Api\Controllers\BooksController.cs:line 45
+   at Microsoft.AspNetCore.Mvc.Internal.ActionMethodExecutor.TaskOfIActionResultExecutor.Execute(IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at System.Threading.Tasks.ValueTask`1.get_Result()
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.InvokeActionMethodAsync()
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.InvokeNextActionFilterAsync()
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.Rethrow(ActionExecutedContext context)
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.InvokeInnerFilterAsync()
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.InvokeNextResourceFilter()
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.Rethrow(ResourceExecutedContext context)
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.InvokeFilterPipelineAsync()
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.InvokeAsync()
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.Invoke(HttpContext httpContext)
+   at Microsoft.AspNetCore.Routing.EndpointRoutingMiddleware.Invoke(HttpContext httpContext)
+   at MyBooks.Api.Filters.ExceptionMiddleware.InvokeAsync(HttpContext httpContext) in C:\Users\Ika\source\repos\MyBooks.Api\MyBooks.Api\Filters\ExceptionMiddleware.cs:line 27
